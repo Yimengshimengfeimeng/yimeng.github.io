@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/land.css">
+<script src="js/iconfont.js"></script>
+
+<body>
+    <!-- 侧边小人 -->
+    <div class="box">
+    </div>
+    <div class="index"><a href="index.html">点击返回首页</a></div>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <!-- 注册 -->
+            <form action="#">
+                <h1>用户注册</h1>
+                <span>您可以选择以下几种方式注册一个您的账户</span>
+                <div class="social-container">
+                    <a href="#" class="social"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-QQ"></use>
+                        </svg></a>
+                    <a href="#" class="social weixin"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weixin"></use>
+                        </svg></a>
+                    <a href="#" class="social"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weibo"></use>
+                        </svg></a>
+                    <a href="#" class="social"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github-fill"></use>
+                        </svg></a>
+                </div>
+                <input type="text" placeholder="用户名">
+                <input type="password" placeholder="密码">
+                <input type="emall" placeholder="邮箱">
+                <button id="send_code">发送验证码</button>
+                <input type="email" placeholder="验证码">
+                <button>注册</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <!-- 登入 -->
+            <form action="#">
+                <h1>用户登入</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-QQ"></use>
+                        </svg></a>
+                    <a href="#" class="social weixin"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weixin"></use>
+                        </svg></a>
+                    <a href="#" class="social"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weibo"></use>
+                        </svg></a>
+                    <a href="#" class="social"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github-fill"></use>
+                        </svg></a>
+                </div>
+                <span>您可以选择以上几种方式登入您的账户</span>
+                <input type="text" placeholder="用户名">
+                <input type="password" placeholder="密码">
+                <a href="#">忘记密码</a>
+                <button>登入</button>
+            </form>
+        </div>
+        <!-- 侧边栏内容 -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panner overlay-left">
+                    <h1>已有账号?</h1>
+                    <p>亲爱的用户请登入</p>
+                    <button class="ghost" id="sginIn" onclick="remove()">登入</button>
+                </div>
+                <div class="overlay-panner overlay-right">
+                    <h1>没有账号?</h1>
+                    <p>点击注册去注册属于自己的账号把</p>
+                    <button class="ghost" id="sginUp" onclick="add()">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/land.js"></script>
+
+</html>

@@ -1,0 +1,44 @@
+/* 快捷导航栏 */
+.w {
+    width: 1200px;
+    margin: auto;
+}
+.f1 {
+    width: 100%;
+    height: 35px;
+    border-bottom:2px solid royalblue ;
+}
+.shortcut .f1 ul li a{
+    color: aqua;
+}
+.shortcut .f1 ul:nth-child(1) li {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    color: aquamarine;
+}
+.shortcut .f1 ul:nth-child(1) li span {
+    height: 100%;
+    padding: 0px 20px;
+}
+.shortcut .f1 ul:nth-child(2) li {
+    float: right;
+    height: 35px;
+    line-height: 35px;
+    color: aquamarine;
+}
+.shortcut .f1 ul:nth-child(2) li a {
+    margin-left: 20px;
+    color: red;
+}
+.box {
+    position: fixed;
+    bottom: 0px;
+    right: 100px;
+    height: 240px;
+    width: 240px;
+    background: url(../image/动图小人.gif) no-repeat;
+    background-size: 100% 100%;
+    z-index: 101;
+    transform: rotateY(180deg);
+}
